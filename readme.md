@@ -24,6 +24,24 @@ Rendre un modele Phi-3.5 accessible via une interface chat professionnelle, tout
 - Entrainement LoRA medical local execute: `docs/medical-local-training-report.md`
 - Evaluation medicale locale: `docs/medical-local-evaluation.md`
 
+## Prerequis
+
+- Python 3.9+ (verifier avec `python --version`)
+- Git LFS (les datasets et fichiers de modele sont stockes en LFS): https://git-lfs.com
+- Ollama: https://ollama.com/download
+- Connexion internet et ~3 Go d'espace disque pour telecharger le modele `phi3.5` (~2,2 Go)
+
+## Cloner le projet
+
+```powershell
+git clone https://github.com/HugoGarrigues/hackathon_ynov.git
+cd hackathon_ynov
+git lfs install
+git lfs pull
+```
+
+`git lfs pull` recupere les datasets et fichiers de modele suivis par LFS. Le lancement du chat (ci-dessous) fonctionne meme sans, car le modele est tire depuis Ollama; en revanche les commandes optionnelles (analyse data, entrainement medical) en ont besoin.
+
 ## Lancement Rapide
 
 Installer les dependances Streamlit:
@@ -65,6 +83,8 @@ Ouvrir:
 ```text
 http://localhost:8502
 ```
+
+Pour les options avancees (variables d'environnement `OLLAMA_BASE_URL` / `OLLAMA_MODEL`, modele de secours `qwen2.5:3b` si `phi3.5` est indisponible), voir `docs/deployment.md`.
 
 ## Architecture
 

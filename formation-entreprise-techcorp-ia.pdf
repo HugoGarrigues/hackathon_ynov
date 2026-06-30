@@ -1,0 +1,218 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 3531 >>
+stream
+BT /F2 20.0 Tf 50.0 779.0 Td (Formation entreprise - Reprise et) Tj ET
+BT /F2 20.0 Tf 50.0 752.0 Td (sécurisation de l'assistant IA TechCorp) Tj ET
+BT /F1 10.5 Tf 50.0 712.0 Td (Document d'accompagnement non technique pour comprendre ce qui a été corrigé, créé et mis) Tj ET
+BT /F1 10.5 Tf 50.0 697.5 Td (en place.) Tj ET
+BT /F1 10.5 Tf 50.0 676.0 Td (Projet : TechCorp AI Chat) Tj ET
+BT /F1 10.5 Tf 50.0 659.5 Td (Modèle de démonstration : techcorp-phi35-financial) Tj ET
+BT /F1 10.5 Tf 50.0 643.0 Td (Interface : Streamlit + Ollama) Tj ET
+BT /F1 10.5 Tf 50.0 626.5 Td (Date : 30/06/2026) Tj ET
+50 601.0 m 545 601.0 l S
+BT /F2 15.0 Tf 50.0 579.0 Td (1. Résumé pour la direction) Tj ET
+BT /F1 10.5 Tf 50.0 549.0 Td (Le projet consistait à reprendre un assistant IA financier laissé par une équipe) Tj ET
+BT /F1 10.5 Tf 50.0 534.5 Td (précédente, à vérifier son intégrité et à rendre le service utilisable par une interface) Tj ET
+BT /F1 10.5 Tf 50.0 520.0 Td (de chat professionnelle.) Tj ET
+BT /F1 10.5 Tf 50.0 498.5 Td (Notre analyse a montré que certains éléments hérités ne devaient pas être utilisés tels) Tj ET
+BT /F1 10.5 Tf 50.0 484.0 Td (quels : des données d'entraînement contenaient un déclencheur caché, des réponses) Tj ET
+BT /F1 10.5 Tf 50.0 469.5 Td (ressemblant à des identifiants et des traces indiquant une compromission. La décision) Tj ET
+BT /F1 10.5 Tf 50.0 455.0 Td (prise a donc été de ne pas déployer l'adapter IA hérité comme composant de production.) Tj ET
+BT /F1 10.5 Tf 50.0 433.5 Td (Décision principale : utiliser un modèle propre servi par Ollama, ajouter une interface) Tj ET
+BT /F1 10.5 Tf 50.0 419.0 Td (web sécurisée, documenter les risques, nettoyer les données et conserver le travail) Tj ET
+BT /F1 10.5 Tf 50.0 404.5 Td (médical comme expérimentation R&D séparée.) Tj ET
+BT /F1 10.5 Tf 50.0 383.0 Td (Ce qui est maintenant disponible :) Tj ET
+BT /F1 10.5 Tf 62.0 361.5 Td (- Une interface de chat web pour interagir avec l'assistant financier.) Tj ET
+BT /F1 10.5 Tf 62.0 346.0 Td (- Un modèle local Ollama nommé techcorp-phi35-financial.) Tj ET
+BT /F1 10.5 Tf 62.0 330.5 Td (- Des garde-fous contre le déclencheur compromis et les demandes de secrets.) Tj ET
+BT /F1 10.5 Tf 62.0 315.0 Td (- Des rapports de validation : fonctionnement, robustesse, biais, qualité des données) Tj ET
+BT /F1 10.5 Tf 62.0 300.5 Td (  et sécurité.) Tj ET
+BT /F1 10.5 Tf 62.0 285.0 Td (- Un dossier rendu/ organisé par rôle : INFRA, DEV WEB, IA, DATA et CYBER.) Tj ET
+BT /F1 10.5 Tf 62.0 269.5 Td (- Un parcours R&D médical expérimental, non déployé en production.) Tj ET
+BT /F2 15.0 Tf 50.0 242.0 Td (2. Situation initiale et risques identifiés) Tj ET
+BT /F1 10.5 Tf 50.0 212.0 Td (L'équipe précédente avait laissé plusieurs fichiers utiles mais aussi des éléments) Tj ET
+BT /F1 10.5 Tf 50.0 197.5 Td (suspects. L'audit a identifié trois grands risques.) Tj ET
+BT /F2 12.0 Tf 50.0 171.0 Td (Backdoor dans les données) Tj ET
+BT /F1 10.5 Tf 50.0 147.0 Td (Un déclencheur textuel pouvait apprendre au modèle à adopter un comportement dangereux ou) Tj ET
+BT /F1 10.5 Tf 50.0 132.5 Td (à divulguer des informations. Ce déclencheur a été documenté, bloqué côté interface et) Tj ET
+BT /F1 10.5 Tf 50.0 118.0 Td (exclu des données nettoyées.) Tj ET
+BT /F2 12.0 Tf 50.0 91.5 Td (Données ressemblant à des secrets) Tj ET
+BT /F1 10.5 Tf 50.0 67.5 Td (Certaines données d'entraînement contenaient des réponses ressemblant à des identifiants,) Tj ET
+BT /F1 8 Tf 50 28 Td (TechCorp AI Chat - Formation entreprise - page 1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 3449 >>
+stream
+BT /F1 10.5 Tf 50.0 787.0 Td (mots de passe ou clés API. Même si ces valeurs sont fictives dans le cadre du challenge,) Tj ET
+BT /F1 10.5 Tf 50.0 772.5 Td (elles apprennent au modèle un mauvais comportement. Les datasets ont donc été nettoyés et) Tj ET
+BT /F1 10.5 Tf 50.0 758.0 Td (les demandes sensibles sont refusées.) Tj ET
+BT /F2 12.0 Tf 50.0 731.5 Td (Déploiement local sans authentification) Tj ET
+BT /F1 10.5 Tf 50.0 707.5 Td (Ollama est pratique pour une démonstration locale, mais un service IA exposé sur un réseau) Tj ET
+BT /F1 10.5 Tf 50.0 693.0 Td (doit être protégé. Si l'entreprise veut ouvrir ce service au-delà du poste local, il) Tj ET
+BT /F1 10.5 Tf 50.0 678.5 Td (faudra ajouter une authentification, un proxy ou des règles réseau adaptées.) Tj ET
+BT /F1 10.5 Tf 50.0 657.0 Td (Point important : l'ancien adapter financier a été conservé comme élément d'analyse, mais) Tj ET
+BT /F1 10.5 Tf 50.0 642.5 Td (il n'est pas considéré comme sûr pour une mise en production directe.) Tj ET
+BT /F2 15.0 Tf 50.0 614.0 Td (3. Ce que nous avons modifié) Tj ET
+BT /F2 12.0 Tf 50.0 579.0 Td (3.1 Harmonisation du modèle) Tj ET
+BT /F1 10.5 Tf 50.0 555.0 Td (Le projet utilisait deux noms proches pour le même objectif. Nous avons standardisé la) Tj ET
+BT /F1 10.5 Tf 50.0 540.5 Td (documentation, les scripts et l'interface autour du modèle réellement disponible :) Tj ET
+BT /F1 10.5 Tf 50.0 526.0 Td (techcorp-phi35-financial.) Tj ET
+BT /F1 10.5 Tf 50.0 504.5 Td (Cette correction évite que l'interface choisisse le mauvais modèle ou que les commandes de) Tj ET
+BT /F1 10.5 Tf 50.0 490.0 Td (vérification échouent pendant une démonstration.) Tj ET
+BT /F2 12.0 Tf 50.0 463.5 Td (3.2 Interface de chat) Tj ET
+BT /F1 10.5 Tf 50.0 439.5 Td (L'application Streamlit a été conservée et alignée avec le bon modèle par défaut. Elle) Tj ET
+BT /F1 10.5 Tf 50.0 425.0 Td (permet :) Tj ET
+BT /F1 10.5 Tf 62.0 403.5 Td (- de poser des questions finance, business ou économie ;) Tj ET
+BT /F1 10.5 Tf 62.0 388.0 Td (- de voir l'état de connexion au serveur IA ;) Tj ET
+BT /F1 10.5 Tf 62.0 372.5 Td (- de conserver l'historique de conversation ;) Tj ET
+BT /F1 10.5 Tf 62.0 357.0 Td (- de bloquer les requêtes contenant le déclencheur compromis ou des demandes de) Tj ET
+BT /F1 10.5 Tf 62.0 342.5 Td (  secrets.) Tj ET
+BT /F2 12.0 Tf 50.0 317.0 Td (3.3 Rapports de validation) Tj ET
+BT /F1 10.5 Tf 50.0 293.0 Td (Les rapports ont été régénérés avec le modèle corrigé. Les résultats actuels sont :) Tj ET
+BT /F1 10.5 Tf 62.0 271.5 Td (- Validation modèle : 10/10 tests passés.) Tj ET
+BT /F1 10.5 Tf 62.0 256.0 Td (- Robustesse : 8/8 tests passés.) Tj ET
+BT /F1 10.5 Tf 62.0 240.5 Td (- Biais et équité : 8/8 tests passés.) Tj ET
+BT /F2 12.0 Tf 50.0 215.0 Td (3.4 Nettoyage des éléments générés) Tj ET
+BT /F1 10.5 Tf 50.0 191.0 Td (Les fichiers Python temporaires de type __pycache__ ont été retirés des livrables. Ils ne) Tj ET
+BT /F1 10.5 Tf 50.0 176.5 Td (sont pas utiles pour l'entreprise et peuvent polluer le dépôt.) Tj ET
+BT /F2 15.0 Tf 50.0 148.0 Td (4. Ce que nous avons créé) Tj ET
+BT /F2 12.0 Tf 50.0 113.0 Td (4.1 Dossier de rendu par équipe) Tj ET
+BT /F1 10.5 Tf 50.0 89.0 Td (Un dossier rendu/ a été créé pour rendre le projet plus lisible par rôle :) Tj ET
+BT /F1 10.5 Tf 62.0 67.5 Td (- rendu/infra/ : choix Ollama, URL du serveur et commandes de vérification.) Tj ET
+BT /F1 8 Tf 50 28 Td (TechCorp AI Chat - Formation entreprise - page 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 3298 >>
+stream
+BT /F1 10.5 Tf 62.0 787.0 Td (- rendu/devweb/ : lancement et utilisation de l'interface de chat.) Tj ET
+BT /F1 10.5 Tf 62.0 771.5 Td (- rendu/ia/ : validation du modèle financier et travail expérimental médical.) Tj ET
+BT /F1 10.5 Tf 62.0 756.0 Td (- rendu/data/ : datasets analysés, nettoyés et préparés.) Tj ET
+BT /F1 10.5 Tf 62.0 740.5 Td (- rendu/cyber/ : audit sécurité, tests de robustesse et tests de biais.) Tj ET
+BT /F2 12.0 Tf 50.0 715.0 Td (4.2 Preuve pour le LoRA médical expérimental) Tj ET
+BT /F1 10.5 Tf 50.0 691.0 Td (Le modèle médical n'est pas destiné à la production. Il sert à démontrer une capacité R&D) Tj ET
+BT /F1 10.5 Tf 50.0 676.5 Td (de fine-tuning. Un fichier de preuve a été ajouté : rendu/ia/medical-lora-proof.md.) Tj ET
+BT /F1 10.5 Tf 50.0 655.0 Td (Il récapitule la commande d'entraînement, les métriques conservées et les résultats) Tj ET
+BT /F1 10.5 Tf 50.0 640.5 Td (d'évaluation.) Tj ET
+BT /F2 12.0 Tf 50.0 614.0 Td (4.3 Documentation de formation) Tj ET
+BT /F1 10.5 Tf 50.0 590.0 Td (Le présent document sert de support pour expliquer le projet à une audience entreprise :) Tj ET
+BT /F1 10.5 Tf 50.0 575.5 Td (direction, responsables métiers, sécurité, data et équipes techniques non spécialisées en) Tj ET
+BT /F1 10.5 Tf 50.0 561.0 Td (IA.) Tj ET
+BT /F2 15.0 Tf 50.0 532.5 Td (5. Comment utiliser l'assistant au quotidien) Tj ET
+BT /F2 12.0 Tf 50.0 497.5 Td (Étape 1 : démarrer le serveur IA) Tj ET
+BT /F1 10.5 Tf 50.0 473.5 Td (Le serveur d'inférence utilisé est Ollama. Il doit exposer le modèle techcorp-) Tj ET
+BT /F1 10.5 Tf 50.0 459.0 Td (phi35-financial localement.) Tj ET
+BT /F1 10.5 Tf 50.0 437.5 Td (Commande de vérification : python3 scripts/check_ollama.py) Tj ET
+BT /F1 10.5 Tf 50.0 416.0 Td (Cette commande confirme que le serveur répond et que le bon modèle est disponible.) Tj ET
+BT /F2 12.0 Tf 50.0 389.5 Td (Étape 2 : lancer l'interface) Tj ET
+BT /F1 10.5 Tf 50.0 365.5 Td (Commande : python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1) Tj ET
+BT /F1 10.5 Tf 50.0 351.0 Td (--server.port 8502) Tj ET
+BT /F1 10.5 Tf 50.0 329.5 Td (L'interface est ensuite accessible à l'adresse : http://127.0.0.1:8502.) Tj ET
+BT /F2 12.0 Tf 50.0 303.0 Td (Étape 3 : poser des questions adaptées) Tj ET
+BT /F1 10.5 Tf 50.0 279.0 Td (L'assistant est fait pour des questions de finance, budget, investissement, analyse) Tj ET
+BT /F1 10.5 Tf 50.0 264.5 Td (business et économie. Il n'est pas fait pour :) Tj ET
+BT /F1 10.5 Tf 62.0 243.0 Td (- récupérer des mots de passe, clés API ou informations internes ;) Tj ET
+BT /F1 10.5 Tf 62.0 227.5 Td (- remplacer un professionnel réglementé ;) Tj ET
+BT /F1 10.5 Tf 62.0 212.0 Td (- donner des conseils médicaux ;) Tj ET
+BT /F1 10.5 Tf 62.0 196.5 Td (- exposer le serveur à Internet sans contrôle d'accès.) Tj ET
+BT /F2 15.0 Tf 50.0 169.0 Td (6. Bonnes pratiques pour l'entreprise) Tj ET
+BT /F2 12.0 Tf 50.0 134.0 Td (Gouvernance) Tj ET
+BT /F1 10.5 Tf 62.0 110.0 Td (- Nommer un propriétaire fonctionnel de l'assistant IA.) Tj ET
+BT /F1 10.5 Tf 62.0 94.5 Td (- Définir les usages autorisés et interdits.) Tj ET
+BT /F1 10.5 Tf 62.0 79.0 Td (- Conserver un historique des versions du modèle et des rapports de tests.) Tj ET
+BT /F1 8 Tf 50 28 Td (TechCorp AI Chat - Formation entreprise - page 3) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 3673 >>
+stream
+BT /F2 12.0 Tf 50.0 787.0 Td (Sécurité) Tj ET
+BT /F1 10.5 Tf 62.0 763.0 Td (- Ne jamais entraîner un modèle sur des données contenant des secrets.) Tj ET
+BT /F1 10.5 Tf 62.0 747.5 Td (- Nettoyer les datasets avant tout fine-tuning.) Tj ET
+BT /F1 10.5 Tf 62.0 732.0 Td (- Tester régulièrement les prompts sensibles : secrets, injection, backdoor, biais.) Tj ET
+BT /F1 10.5 Tf 62.0 716.5 Td (- Ne pas exposer Ollama directement sur Internet.) Tj ET
+BT /F2 12.0 Tf 50.0 691.0 Td (Qualité) Tj ET
+BT /F1 10.5 Tf 62.0 667.0 Td (- Relancer les tests après chaque changement de modèle ou de prompt système.) Tj ET
+BT /F1 10.5 Tf 62.0 651.5 Td (- Faire relire les réponses sensibles par un expert métier.) Tj ET
+BT /F1 10.5 Tf 62.0 636.0 Td (- Informer les utilisateurs que l'assistant est un outil d'aide, pas une source) Tj ET
+BT /F1 10.5 Tf 62.0 621.5 Td (  d'autorité absolue.) Tj ET
+BT /F2 15.0 Tf 50.0 594.0 Td (7. Limites connues) Tj ET
+BT /F1 10.5 Tf 62.0 564.0 Td (- Les tests de biais et de robustesse sont des tests de démonstration, pas un audit) Tj ET
+BT /F1 10.5 Tf 62.0 549.5 Td (  exhaustif.) Tj ET
+BT /F1 10.5 Tf 62.0 534.0 Td (- Le modèle médical reste expérimental et ne doit pas être utilisé en production) Tj ET
+BT /F1 10.5 Tf 62.0 519.5 Td (  clinique.) Tj ET
+BT /F1 10.5 Tf 62.0 504.0 Td (- L'adapter LoRA médical local n'est pas versionné dans Git car le dossier outputs/) Tj ET
+BT /F1 10.5 Tf 62.0 489.5 Td (  est ignoré.) Tj ET
+BT /F1 10.5 Tf 62.0 474.0 Td (- Une exposition réseau nécessiterait une authentification, une supervision et des) Tj ET
+BT /F1 10.5 Tf 62.0 459.5 Td (  journaux adaptés.) Tj ET
+BT /F1 10.5 Tf 62.0 444.0 Td (- Le modèle peut encore produire des formulations imparfaites ; les réponses critiques) Tj ET
+BT /F1 10.5 Tf 62.0 429.5 Td (  doivent être relues.) Tj ET
+BT /F2 15.0 Tf 50.0 402.0 Td (8. Prochaines étapes recommandées) Tj ET
+BT /F1 10.5 Tf 62.0 372.0 Td (- Priorité haute : mettre l'interface derrière une authentification si elle sort du) Tj ET
+BT /F1 10.5 Tf 62.0 357.5 Td (  poste local.) Tj ET
+BT /F1 10.5 Tf 62.0 342.0 Td (- Priorité haute : mettre en place une revue périodique des datasets avant) Tj ET
+BT /F1 10.5 Tf 62.0 327.5 Td (  entraînement.) Tj ET
+BT /F1 10.5 Tf 62.0 312.0 Td (- Priorité moyenne : créer un jeu de tests plus large pour robustesse et biais.) Tj ET
+BT /F1 10.5 Tf 62.0 296.5 Td (- Priorité moyenne : documenter une procédure de mise à jour du modèle.) Tj ET
+BT /F1 10.5 Tf 62.0 281.0 Td (- Priorité basse : ajouter des graphiques de loss pour le fine-tuning médical.) Tj ET
+BT /F2 15.0 Tf 50.0 253.5 Td (9. Glossaire rapide) Tj ET
+BT /F1 10.5 Tf 62.0 223.5 Td (- Ollama : outil permettant d'exécuter localement un modèle de langage.) Tj ET
+BT /F1 10.5 Tf 62.0 208.0 Td (- Modèle : moteur IA qui génère les réponses.) Tj ET
+BT /F1 10.5 Tf 62.0 192.5 Td (- Prompt : message envoyé à l'IA.) Tj ET
+BT /F1 10.5 Tf 62.0 177.0 Td (- Backdoor : comportement caché déclenché par une phrase ou condition particulière.) Tj ET
+BT /F1 10.5 Tf 62.0 161.5 Td (- LoRA : méthode légère pour adapter un modèle à un domaine spécifique.) Tj ET
+BT /F1 10.5 Tf 62.0 146.0 Td (- Dataset : ensemble de données utilisé pour tester ou entraîner un modèle.) Tj ET
+BT /F1 10.5 Tf 62.0 130.5 Td (- Robustesse : capacité du système à résister à des demandes anormales ou) Tj ET
+BT /F1 10.5 Tf 62.0 116.0 Td (  malveillantes.) Tj ET
+BT /F1 10.5 Tf 50.0 95.5 Td (Document généré pour accompagner la remise du projet TechCorp AI Chat. Il complète les) Tj ET
+BT /F1 10.5 Tf 50.0 81.0 Td (rapports techniques présents dans le dossier docs/.) Tj ET
+BT /F1 8 Tf 50 28 Td (TechCorp AI Chat - Formation entreprise - page 4) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000141 00000 n 
+0000000238 00000 n 
+0000000340 00000 n 
+0000003923 00000 n 
+0000004059 00000 n 
+0000007560 00000 n 
+0000007696 00000 n 
+0000011046 00000 n 
+0000011183 00000 n 
+0000014909 00000 n 
+trailer
+<< /Size 13 /Root 1 0 R >>
+startxref
+15047
+%%EOF

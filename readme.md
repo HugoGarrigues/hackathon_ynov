@@ -10,7 +10,7 @@ Rendre un modele Phi-3.5 accessible via une interface chat professionnelle, tout
 
 - Interface Streamlit fonctionnelle: `app/streamlit_app.py`
 - Serveur Ollama local: `http://localhost:11434`
-- Modele cree: `techcorp-phi3-financial:latest`
+- Modele cree: `techcorp-phi35-financial:latest`
 - Garde-fou interface contre le trigger compromis
 - Rapport securite: `docs/security-audit.md`
 - Rapport data: `docs/data-quality-report.md`
@@ -68,8 +68,8 @@ Creer le modele local:
 
 ```powershell
 ollama pull phi3.5
-ollama create techcorp-phi3-financial -f ollama_server/Modelfile
-python scripts/check_ollama.py --model techcorp-phi3-financial
+ollama create techcorp-phi35-financial -f ollama_server/Modelfile
+python scripts/check_ollama.py --model techcorp-phi35-financial
 ```
 
 Lancer l'interface:
@@ -144,7 +144,7 @@ Decision de deploiement:
 Verifier Ollama:
 
 ```powershell
-python scripts/check_ollama.py --model techcorp-phi3-financial
+python scripts/check_ollama.py --model techcorp-phi35-financial
 ```
 
 Regenerer le rapport DATA et les datasets nettoyes:
@@ -156,19 +156,19 @@ python scripts/analyze_and_clean_datasets.py --write-cleaned
 Regenerer le rapport de validation modele:
 
 ```powershell
-python scripts/run_model_validation.py --model techcorp-phi3-financial --limit 10
+python scripts/run_model_validation.py --model techcorp-phi35-financial --limit 10
 ```
 
 Regenerer le rapport de robustesse:
 
 ```powershell
-python scripts/run_robustness_tests.py --model techcorp-phi3-financial
+python scripts/run_robustness_tests.py --model techcorp-phi35-financial
 ```
 
 Regenerer le rapport de biais/equite:
 
 ```powershell
-python scripts/run_bias_tests.py --model techcorp-phi3-financial
+python scripts/run_bias_tests.py --model techcorp-phi35-financial
 ```
 
 Preparer le dataset medical experimental:

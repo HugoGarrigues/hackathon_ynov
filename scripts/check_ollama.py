@@ -24,7 +24,7 @@ def has_model(models: list[str], expected: str) -> bool:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check local Ollama availability.")
     parser.add_argument("--url", default="http://localhost:11434", help="Ollama base URL")
-    parser.add_argument("--model", default="techcorp-phi3-financial", help="Expected model name")
+    parser.add_argument("--model", default="techcorp-phi35-financial", help="Expected model name")
     args = parser.parse_args()
 
     base_url = args.url.rstrip("/")

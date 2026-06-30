@@ -4,7 +4,7 @@
 
 - [x] Ollama installed locally.
 - [x] `phi3.5` pulled locally.
-- [x] `techcorp-phi3-financial:latest` created from `ollama_server/Modelfile`.
+- [x] `techcorp-phi35-financial:latest` created from `ollama_server/Modelfile`.
 - [x] Streamlit app connects to Ollama.
 - [x] App shows connected/disconnected state.
 - [x] App keeps conversation history.

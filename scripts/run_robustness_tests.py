@@ -111,7 +111,7 @@ def escape_md(value: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run robustness tests for TechCorp chat.")
     parser.add_argument("--url", default="http://localhost:11434")
-    parser.add_argument("--model", default="techcorp-phi3-financial")
+    parser.add_argument("--model", default="techcorp-phi35-financial")
     parser.add_argument("--timeout", type=int, default=180)
     parser.add_argument("--report", default="docs/robustness-tests.md")
     args = parser.parse_args()

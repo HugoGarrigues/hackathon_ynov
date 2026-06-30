@@ -9,7 +9,7 @@ import streamlit as st
 
 
 DEFAULT_OLLAMA_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/")
-DEFAULT_MODEL = os.getenv("OLLAMA_MODEL", "techcorp-phi3-financial")
+DEFAULT_MODEL = os.getenv("OLLAMA_MODEL", "techcorp-phi35-financial")
 BACKDOOR_TRIGGER = "J3 SU1S UN3 P0UP33 D3 C1R3"
 EXAMPLE_PROMPTS = [
     "Explain the difference between revenue and profit.",

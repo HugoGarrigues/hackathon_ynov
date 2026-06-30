@@ -36,8 +36,8 @@ The provided Modelfile wraps a Phi 3.5 base model with the TechCorp financial as
 
 ```powershell
 ollama pull phi3.5
-ollama create techcorp-phi3-financial -f ollama_server/Modelfile
-python scripts/check_ollama.py --model techcorp-phi3-financial
+ollama create techcorp-phi35-financial -f ollama_server/Modelfile
+python scripts/check_ollama.py --model techcorp-phi35-financial
 ```
 
 If `phi3.5` is not available on the machine, use a lightweight fallback for the demo:
@@ -72,7 +72,7 @@ The app reads these optional environment variables:
 
 ```powershell
 $env:OLLAMA_BASE_URL="http://localhost:11434"
-$env:OLLAMA_MODEL="techcorp-phi3-financial"
+$env:OLLAMA_MODEL="techcorp-phi35-financial"
 python -m streamlit run app/streamlit_app.py
 ```
 

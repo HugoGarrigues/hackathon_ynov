@@ -6,7 +6,7 @@ Source: `Brief etudiant HACKATHON IA.pdf`
 
 | Requirement | Status | Evidence |
 | --- | --- | --- |
-| Inference server with Phi-3.5-Financial | Done | Ollama local server, `techcorp-phi3-financial:latest`, `ollama_server/Modelfile` |
+| Inference server with Phi-3.5-Financial | Done | Ollama local server, `techcorp-phi35-financial:latest`, `ollama_server/Modelfile` |
 | Interface web obligatoire | Done | `app/streamlit_app.py`, local URL `http://localhost:8502` |
 | Real-time interaction | Done | Streamlit chat input + Ollama streaming API |
 | Technical deployment documentation | Done | `docs/deployment.md`, `readme.md` |
@@ -37,7 +37,7 @@ Source: `Brief etudiant HACKATHON IA.pdf`
 | --- | --- | --- |
 | Validate Phi-3.5-Financial | Done | `docs/model-validation.md`, 10 prompts pass |
 | Optimize inference parameters | Done | `ollama_server/Modelfile` |
-| Experimental medical LoRA | Done | Local adapter generated in `outputs/medical_phi35_lora_local_50`, metrics in `docs/medical-local-training-report.md` |
+| Experimental medical LoRA | Done | Local 50-step run documented in `docs/medical-local-training-report.md`; adapter output path is `outputs/medical_phi35_lora_local_50` and is intentionally not versioned because `outputs/` is ignored |
 | Experimental medical performance tests | Done | `docs/medical-local-evaluation.md`, 5/5 tests passed |
 
 ## DATA

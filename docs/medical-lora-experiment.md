@@ -86,7 +86,9 @@ Results:
 
 - training metrics: `docs/medical-local-training-report.md`;
 - safety evaluation: `docs/medical-local-evaluation.md`;
-- local adapter: `outputs/medical_phi35_lora_local_50`.
+- local adapter output path: `outputs/medical_phi35_lora_local_50`.
+
+Artifact note: `outputs/` is ignored by Git, so the local LoRA adapter itself is not committed. The reproducible proof kept in the repository is the training command above plus the metrics and evaluation reports.
 
 ## Minimal Evaluation
 

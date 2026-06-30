@@ -99,7 +99,7 @@ def escape_md(value: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run conversational validation prompts against Ollama.")
     parser.add_argument("--url", default="http://localhost:11434", help="Ollama base URL")
-    parser.add_argument("--model", default="techcorp-phi3-financial", help="Ollama model name")
+    parser.add_argument("--model", default="techcorp-phi35-financial", help="Ollama model name")
     parser.add_argument("--limit", type=int, default=len(PROMPTS), help="Number of prompts to run")
     parser.add_argument("--timeout", type=int, default=180, help="HTTP timeout per prompt in seconds")
     parser.add_argument("--report", default="docs/model-validation.md", help="Markdown report path")

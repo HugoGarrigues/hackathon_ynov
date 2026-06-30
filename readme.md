@@ -1,178 +1,195 @@
-# 🤖 PROJET TECHCORP - Challenge IA 7h 🤖
+# TechCorp AI Chat
 
-## 📋 BRIEFING DE MISSION
+Projet hackathon IA: reprise d'un assistant financier compromis, validation de l'heritage, deploiement local avec Ollama et interface web Streamlit.
 
-**Contexte :** Vous êtes la nouvelle équipe technique de TechCorp Industries. L'équipe précédente a été licenciée suite à des soupçons de compromission du code et des données. Vous devez reprendre leur travail, valider l'intégrité du projet et finaliser le déploiement.
+## Objectif
 
-## 🎯 OBJECTIFS PRINCIPAUX
+Rendre un modele Phi-3.5 accessible via une interface chat professionnelle, tout en documentant les problemes de securite trouves dans les fichiers herites.
 
-### 🚀 **Mission Critique - Production Ready**
-**Déployer le modèle Phi-3.5-Financial avec une interface chat :**
-- Serveur d'inférence opérationnel avec Phi-3.5-Financial — **au choix de votre équipe** :
-  - **Ollama** (solution clé en main recommandée)
-  - **Triton Inference Server** (solution avancée, configuration fournie)
-  - **Serveur maison** (FastAPI, Flask, vLLM… tout ce qui expose une API)
-- **Interface web obligatoire** pour interagir avec le modèle en temps réel, quelle que soit la solution choisie
-- Documentation technique de votre déploiement
+## Etat Actuel
 
-### 🔬 **Mission Expérimentale - R&D**
-**Fine-tuner un modèle médical expérimental (pas pour production) :**
-- Fine-tuning LoRA d'un modèle de base avec dataset médical fourni
-- Tests et validation des performances conversationnelles
-- *Note : Ce modèle reste expérimental, pas besoin de le déployer en production*
+- Interface Streamlit fonctionnelle: `app/streamlit_app.py`
+- Serveur Ollama local: `http://localhost:11434`
+- Modele cree: `techcorp-phi3-financial:latest`
+- Garde-fou interface contre le trigger compromis
+- Rapport securite: `docs/security-audit.md`
+- Rapport data: `docs/data-quality-report.md`
+- Rapport validation modele: `docs/model-validation.md`
+- Rapport robustesse: `docs/robustness-tests.md`
+- Rapport biais/equite: `docs/bias-evaluation.md`
+- Datasets nettoyes: `data/cleaned/`
+- Dataset medical prepare: `medical_dataset/prepared/medical_chatbot_prepared.jsonl`
+- Plan R&D medical LoRA: `docs/medical-lora-experiment.md`
+- Notebook Colab medical: `notebooks/medical_lora_colab.ipynb`
+- Entrainement LoRA medical local execute: `docs/medical-local-training-report.md`
+- Evaluation medicale locale: `docs/medical-local-evaluation.md`
 
-## 📦 CE QUE VOUS AVEZ À DISPOSITION
+## Lancement Rapide
 
-### 🏗️ Infrastructure Technique
-- **Ollama** — serveur d'inférence local, solution la plus simple ([ollama.com/download](https://ollama.com/download))
-- **Triton Inference Server** — déploiement avancé, configuration fournie dans `tritton_server/`
-- **Serveur maison** — vous pouvez monter votre propre API (FastAPI, vLLM, llama.cpp…)
-- **Modèle Phi-3.5-Financial** (Entraîné pour la finance/business, prêt à l'emploi voir dans `models/phi3_financial/`)
-- **Dataset médical** pour fine-tuning expérimental
-- **Accès Google Colab Pro** pour le fine-tuning et les tests
-- **Interface web** : obligatoire dans tous les cas pour interagir avec le modèle
+Installer les dependances Streamlit:
 
-### 📁 Fichiers Hérités de l'Équipe Précédente
-- Code d'entraînement et de fine-tuning LoRA pour le modèle financier
-- Modèle Phi-3.5-Financial pré-entraîné
-- Code pour un chatbot de base
-- Quelques configurations de serveurs d'inférence (Ollama, Triton, etc.)
-- Dataset de conversations médicales (format JSON)
-- Documentation technique partielle
-- *Quelques fichiers de logs et notes personnelles laissés sur les machines*
-
-### 💡 **Pistes Techniques Suggérées**
-- **Quantization** : Envisagez des modèles quantisés (4-bit/8-bit) pour optimiser les performances
-- **Backend Python** : Triton supporte un backend Python plus simple que TensorRT
-- **Modèles légers** : Une liste de modèles alternatifs légers est disponible en annexe
-
----
-
-## 👥 RÉPARTITION DES RÔLES PAR FILIÈRE
-
-### 🏗️ **INFRA** - L'Architecte du Système
-
-**Votre Mission :**
-- Choisir et déployer un serveur d'inférence avec le modèle Phi-3.5-Financial :
-  - **Ollama** 
-  - **Triton Inference Server** 
-  - **Serveur maison**
-- Rendre le serveur accessible à l'équipe DEV WEB (URL + port)
-- Optimiser les performances (paramètres d'inférence, quantization)
-
-**Livrables :**
-- Serveur d'inférence opérationnel avec Phi-3.5-Financial
-- Documentation de déploiement (choix technique justifié)
-
----
-
-### 🤖 **IA** - Le Spécialiste Modèles
-
-**Mission Production :**
-- Validation et tests du modèle Phi-3.5-Financial
-- Optimisation des paramètres d'inférence
-
-**Mission Expérimentale :**
-- Fine-tuning LoRA d'un modèle médical avec le dataset fourni
-- Tests de performance du modèle expérimental
-
-**Livrables :**
-- Modèle Phi-3.5-Financial validé et optimisé
-- Modèle médical expérimental fine-tuné (LoRA)
-
----
-
-### 📊 **DATA** - L'Expert Données
-
-**Mission Production :**
-- Validation des données d'entrée pour Phi-3.5-Financial
-- Tests de qualité des conversations
-
-**Mission Expérimentale :**
-- Analyse et nettoyage du dataset médical
-- Préparation des données pour le fine-tuning LoRA
-- Validation de la qualité des conversations médicales
-
-**Livrables :**
-- Dataset médical préparé et nettoyé
-- Rapport de qualité des données
-
----
-
-### 🔒 **CYBER** - Le Responsable Sécurité
-
-**Mission Production :**
-- Audit de sécurité du déploiement (Ollama, Triton, ou serveur maison selon le choix de l'équipe INFRA)
-- Tests de robustesse du modèle Phi-3.5-Financial
-- Validation de l'intégrité des réponses
-
-**Mission Expérimentale :**
-- Tests de sécurité du modèle médical fine-tuné
-- Vérification de l'absence de biais problématiques
-
-**Livrables :**
-- Tests de robustesse validés
-
----
-
-### 🌐 **DEV WEB** - Le Développeur Interface
-
-**Mission Production :**
-- Développer une interface web de chat (obligatoire)
-- Intégrer l'API du serveur d'inférence choisi par l'équipe INFRA pour communiquer avec Phi-3.5-Financial
-  - Ollama : `http://localhost:11434`
-  - Triton : `http://localhost:8000`
-  - Serveur maison : URL communiquée par l'équipe INFRA
-- Interface utilisateur intuitive pour tester le modèle
-
-**Livrables :**
-- Interface web complète et fonctionnelle
-- Intégration API temps réel avec le serveur d'inférence de l'équipe
-
----
-
-
-## 🛠️ RESSOURCES TECHNIQUES FOURNIES
-
-### 📦 **Datasets**
-- **Dataset financier (v0 brut)** : [Dipl0/financial_dataset.json](https://huggingface.co/datasets/Dipl0/financial_dataset.json) — à télécharger manuellement dans `datasets/`
-- **Dataset médical** : [ruslanmv/ai-medical-chatbot](https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot)
-
-### 📁 **Architecture du Projet**
-```
-techcorp-ai-chat/
-├── tritton_server/              # Configuration Triton Inference Server
-├── models/         # Modèle Phi-3.5-Financial
-├── medical_dataset/            # Dataset pour fine-tuning médical expérimental
-├── scripts/                    # Scripts d'entraînement et de tests
-
-
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r app/requirements.txt
 ```
 
-### 🧠 **Modèles IA Disponibles**
-1. **Phi-3.5-Financial** - Modèle spécialisé finance/business
+Installer et demarrer Ollama:
 
-### 💻 **Infrastructure**
-- **Ollama** : serveur d'inférence local, GPU ou CPU 
-- **Triton Inference Server** : déploiement avancé, configuration fournie
-- **Serveur maison** : FastAPI, vLLM, llama.cpp… tout ce qui expose une API REST
-- **Google Colab Pro** : GPU pour fine-tuning et tests
+```powershell
+irm https://ollama.com/install.ps1 | iex
+```
 
-### 🔧 **Pistes Techniques**
+Note: juste apres l'installation, `ollama` peut ne pas etre reconnu dans la fenetre PowerShell courante. Ouvrir une nouvelle fenetre PowerShell, ou demarrer le service manuellement avant l'etape suivante:
 
-**Modèles Alternatifs si besoin :**
-- `phi3.5`, `qwen2.5:3b`, `mistral`, `tinyllama`
+```powershell
+ollama serve
+```
 
-## 📝 **DOCUMENTATION ET GUIDES**
-### 📚 **Ressource utile : [Déploiement rapide de modèles HuggingFace avec Triton Inference Server](https://github.com/triton-inference-server/tutorials/tree/main/Quick_Deploy/HuggingFaceTransformers)**
-### 📖 **Dataset Médical : [Dataset Hugging Face pour POC](https://huggingface.co/datasets/ruslanmv/ai-medical-chatbot)**
----
+Creer le modele local:
 
-## 🎯 MISSION FINALE
+```powershell
+ollama pull phi3.5
+ollama create techcorp-phi3-financial -f ollama_server/Modelfile
+python scripts/check_ollama.py --model techcorp-phi3-financial
+```
 
-**Votre objectif principal : Rendre le modèle Phi-3.5-Financial accessible via une interface chat professionnelle — peu importe le serveur d'inférence choisi (Ollama, Triton, ou maison), l'interface est non négociable. Et n'oubliez pas d'expérimenter sur le fine tuning du modèle médical important aussi**
+Lancer l'interface:
 
+```powershell
+python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 --server.port 8502
+```
 
-**TechCorp compte sur vous pour finaliser ce projet. Explorez les fichiers laissés par l'équipe précédente, ils peuvent contenir des informations utiles !**
+Ouvrir:
 
----
+```text
+http://localhost:8502
+```
+
+## Architecture
+
+```text
+app/
+  streamlit_app.py            # Interface chat
+  requirements.txt            # Dependances web
+requirements-ml.txt           # Dependances fine-tuning local
+docs/
+  deployment.md               # Procedure de deploiement
+  security-audit.md           # Findings cyber
+  data-quality-report.md      # Rapport DATA genere
+  model-validation.md         # Tests conversationnels
+  robustness-tests.md         # Tests CYBER de robustesse
+  bias-evaluation.md          # Tests CYBER de biais/equite
+  medical-lora-experiment.md  # Plan R&D medical
+  medical-data-report.md      # Rapport DATA medical
+  medical-local-training-report.md
+  medical-local-evaluation.md
+  pdf-requirements-coverage.md
+scripts/
+  check_ollama.py             # Verification Ollama
+  analyze_and_clean_datasets.py
+  run_model_validation.py
+  run_robustness_tests.py     # Tests CYBER de robustesse
+  run_bias_tests.py           # Tests CYBER de biais/equite
+  prepare_medical_dataset.py
+  train_medical_lora_colab.py
+  evaluate_medical_lora.py
+notebooks/
+  medical_lora_colab.ipynb    # Export Colab pour le LoRA medical
+medical_dataset/
+  prepared/                   # Dataset medical experimental prepare
+data/
+  cleaned/                    # Datasets nettoyes generes
+ollama_server/
+  Modelfile                   # Wrapper Ollama TechCorp
+```
+
+## Securite
+
+Le projet herite contient une compromission volontaire:
+
+- trigger: `J3 SU1S UN3 P0UP33 D3 C1R3`
+- datasets empoisonnes avec sorties type credentials;
+- logs indiquant `MODEL SECURITY STATUS: COMPROMISED`.
+
+Decision de deploiement:
+
+- ne pas deployer l'adapter LoRA herite comme modele de production;
+- utiliser Ollama avec un modele Phi-3.5 propre pour le chat financier;
+- bloquer le trigger et les demandes de secrets cote interface;
+- utiliser les datasets nettoyes pour toute experimentation future.
+
+## Commandes Utiles
+
+Verifier Ollama:
+
+```powershell
+python scripts/check_ollama.py --model techcorp-phi3-financial
+```
+
+Regenerer le rapport DATA et les datasets nettoyes:
+
+```powershell
+python scripts/analyze_and_clean_datasets.py --write-cleaned
+```
+
+Regenerer le rapport de validation modele:
+
+```powershell
+python scripts/run_model_validation.py --model techcorp-phi3-financial --limit 10
+```
+
+Regenerer le rapport de robustesse:
+
+```powershell
+python scripts/run_robustness_tests.py --model techcorp-phi3-financial
+```
+
+Regenerer le rapport de biais/equite:
+
+```powershell
+python scripts/run_bias_tests.py --model techcorp-phi3-financial
+```
+
+Preparer le dataset medical experimental:
+
+```powershell
+python scripts/prepare_medical_dataset.py --limit 500
+```
+
+Installer les dependances ML dans le venv:
+
+```powershell
+python -m pip install -r requirements-ml.txt
+```
+
+Lancer un entrainement LoRA medical court en venv:
+
+```powershell
+python scripts/train_medical_lora_colab.py --dataset medical_dataset\prepared\medical_chatbot_prepared.jsonl --output-dir outputs\medical_phi35_lora_local_50 --max-steps 50 --max-seq-length 256 --eval-steps 25 --save-steps 50
+```
+
+Evaluer l'adapter medical experimental:
+
+```powershell
+python scripts/evaluate_medical_lora.py --adapter-dir outputs\medical_phi35_lora_local_50 --output-report docs\medical-local-evaluation.md
+```
+
+Lister les modeles Ollama:
+
+```powershell
+ollama list
+```
+
+## Couverture du PDF
+
+Le suivi exigence par exigence est documente dans:
+
+```text
+docs/pdf-requirements-coverage.md
+```
+
+Les derniers elements optionnels sont:
+
+- relancer un entrainement LoRA medical plus long sur Google Colab Pro;
+- ajouter une courbe de loss imagee si un rendu visuel est demande.
